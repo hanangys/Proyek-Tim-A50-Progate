@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team A50</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Assets/giphy.gif">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Team A50<span>.</span></a>
+      <div class="menuToggle" onclick="toggleMenu();"></div>
+      <ul class="navigation">
+        <li><a href="#banner" onclick="toggleMenu();"">Home</a></li>
+        <li><a href="#profile" onclick="toggleMenu();"">Profile</a></li>
+        <li><a href="#kontak" onclick="toggleMenu();"">Contact</a></li>
+        <li class="btn-nav"><a href="#" onclick="toggleMenu();"">Join Us</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="banner" id="banner">
+        <div class="content">
+          <h2>Project Web Design</h2>
+          <h2>Team A50</h2>
+          <a href="#" class="btn">View Our Portfolio</a>
+        </div>
+      </section>
+
+      <section class="profile" id="profile">
+        <div class="title white">
+          <h2 class="titleText">Our Team</h2>
+          <p>
+            Tim ini terbentuk untuk menyelesaikan tugas untuk membuat desain website, yang mana ini merupakan salah satu prasyarat untuk kelulusan dalam pelatihan ini.
+          </p>
+        </div>
+        <div class="content">
+          <div class="box">
+            <div class="imgBox">
+              <img src="Assets/hanangys.jpg" alt="Foto hanang" />
+            </div>
+            <div class="text">
+              <p>Nama Lengkap : <br>Hanang Yuandhicha Setyadi</p>
+              <p>Nama Panggilan : Hanang</p>
+              <h3>Bekasi</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="imgBox">
+              <img src="Assets/Maulia.png" alt="Foto hanang" />
+            </div>
+            <div class="text">
+              <p>Nama Lengkap : <br>Maulia Febrianti</p>
+              <p>Nama Panggilan : Maulia</p>
+              <h3>Sidoarjo</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="imgBox">
+              <img src="Assets/afrizal.jpg" alt="Foto hanang" />
+            </div>
+            <div class="text">
+              <p>Nama Lengkap : <br>Muhammad Afrizal</p>
+              <p>Nama Panggilan : Afrizal</p>
+              <h3>Tangerang</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="imgBox">
+              <img src="Assets/kresno.jpg" alt="Foto hanang" />
+            </div>
+            <div class="text">
+              <p>Nama Lengkap : <br>Kresno Prakoso</p>
+              <p>Nama Panggilan : Kresno</p>
+              <h3>Jambi</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="imgBox">
+              <img src="Assets/Hasna.jpeg" alt="Foto hanang" />
+            </div>
+            <div class="text">
+              <p>Nama Lengkap : <br>Hasna Dzaki</p>
+              <p>Nama Panggilan : Hasna</p>
+              <h3>Boyolali</h3>
+            </div>
+          </div>
+          
+          </div>
+        </div>
+      </section>
+
+      <section class="kontak" id="kontak">
+        <div class="title">
+          <h2 class="titleText">Contact Us Here</h2>
+          <p>
+            Jika ada kritik dan saran atau pertanyaan, silahkan hubungi kami.
+          </p>
+        </div>
+        <div class="formKontak">
+          <h3>Kirim Pesan</h3>
+          <div class="inputBox">
+            <input type="text" placeholder="Nama" />
+          </div>
+          <div class="inputBox">
+            <input type="text" placeholder="Email" />
+          </div>
+          <div class="inputBox">
+            <textarea placeholder="Tulis Pesan Anda Disini" /></textarea>
+          </div>
+          <div class="inputBox">
+            <input type="submit" value="Kirim"/>
+          </div>
+      </section>
+
+    </main>
+      
+    <footer>
+      <div class="copyrightText">
+        <p>Copyright 2021 <a href="#">Tim 50 </a>Group Project Kelas Kecerdasan Digital <a href="https://progate.com/">HTML & CSS</a></p>
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY > 0)
+      });
+
+      function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+      }
+
+    </script>
+  </body>
+</html>
